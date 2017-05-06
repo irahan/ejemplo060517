@@ -1,0 +1,10 @@
+import javax.swing.JOptionPane;
+public class Principal {
+public static void main(String[] args){
+	Persona p1 = new Persona("Pedro","Mora","Perez",18);
+   // System.out.println(p1.toString());
+ String name=JOptionPane.showInputDialog("Ingresa tu nombre");
+ p1.setNombre(name);   
+ JOptionPane.showMessageDialog(null,"El nombre es: "+ p1.getNombre());
+}
+}
